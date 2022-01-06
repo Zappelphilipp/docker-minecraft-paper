@@ -29,7 +29,7 @@ USER spigot
 RUN touch server.properties
 
 # Download Paper
-RUN wget -O paper.jar https://papermc.io/api/v2/projects/paper/versions/1.17.1/builds/402/downloads/paper-1.17.1-402.jar
+RUN wget -O paper.jar https://papermc.io/api/v2/projects/paper/versions/1.18.1/builds/133/downloads/paper-1.18.1-133.jar
 
 # Open port for Minecraft
 EXPOSE 25565
@@ -37,5 +37,5 @@ EXPOSE 25565
 EXPOSE 25575
 
 # Run Spigot server
-CMD java -Xmx1024M -Xms1024M -jar /spigot/paper.jar
+CMD java -Xmx2048M -Xms1024M -jar /spigot/paper.jar
 
