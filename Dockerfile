@@ -1,4 +1,4 @@
-FROM openjdk:17.0.1-slim
+FROM openjdk:17.0.2-slim
 
 WORKDIR /spigot
 
@@ -29,7 +29,7 @@ USER spigot
 RUN touch server.properties
 
 # Download Paper
-RUN wget -O paper.jar https://papermc.io/api/v2/projects/paper/versions/1.18.1/builds/152/downloads/paper-1.18.1-152.jar
+RUN wget -O paper.jar https://papermc.io/api/v2/projects/paper/versions/1.18.1/builds/169/downloads/paper-1.18.1-169.jar
 
 # Open port for Minecraft
 EXPOSE 25565
