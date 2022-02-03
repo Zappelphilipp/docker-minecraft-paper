@@ -29,7 +29,7 @@ USER spigot
 RUN touch server.properties
 
 # Download Paper
-RUN wget -O paper.jar https://papermc.io/api/v2/projects/paper/versions/1.18.1/builds/169/downloads/paper-1.18.1-169.jar
+RUN wget -O paper.jar https://papermc.io/api/v2/projects/paper/versions/1.18.1/builds/184/downloads/paper-1.18.1-184.jar
 
 # Open port for Minecraft
 EXPOSE 25565
